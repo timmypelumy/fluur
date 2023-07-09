@@ -225,7 +225,7 @@ export default function Home() {
               >
                 <div className="self-stretch w-[90%] flex flex-row justify-center items-center min-h-[100px] lg:hidden my-8 lg:w-[40%]">
                   {" "}
-                  <i className="fa-solid fa-sharp fa-money-bill-trend-up c-text text-7xl "></i>
+                  <i className="fa-solid fa-sharp fa-money-bill-trend-up c-text text-6xl "></i>
                 </div>
                 <h3 className="font-bold 2xl:text-3xl capitalize text-white text-lg lg:text-2xl mb-6">
                   {" "}
