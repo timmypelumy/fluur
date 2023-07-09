@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .c-bg {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      77deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+  }
+
+  .c-text {
+    background: rgb(34, 193, 195);
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .c-border {
+    background: rgb(34, 193, 195);
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgb(34, 193, 195) 0%,
+      rgba(93, 29, 233, 1) 100%
+    );
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+}
