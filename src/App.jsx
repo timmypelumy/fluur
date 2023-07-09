@@ -39,7 +39,7 @@ export default function Home() {
 
         <NotificationCard
           successText="Notify Me"
-          sMsg="Our launchpad is coming soon!"
+          sMsg="We will release our contact info soon!"
           successIcon="bi-rocket"
           successCallback={handleCloseClick}
           show={showComingSoon}
@@ -50,10 +50,6 @@ export default function Home() {
             {" "}
             Building Infrastructure for <WordScripter />
           </h1>
-
-          <h2 className="c-text  text-lg w-[90%] mx-auto text-center md:text-2xl lg:text-3xl">
-            Using NFTs to Scale Web3 adoption
-          </h2>
 
           {/* Buttons  */}
           <div className="mt-16 space-y-6">
@@ -70,7 +66,7 @@ export default function Home() {
                 className="block  w-full  hover:border-[#5D1DE9] group transition-colors duration-200  rounded-3xl border border-white  px-12 font-bold capitalize py-2 text-base lg:text-lg"
               >
                 <span className="text-white group-hover:c-text  ">
-                  Apply for launchpad
+                  Contact Us
                 </span>{" "}
               </button>
             </Fade>
@@ -80,25 +76,31 @@ export default function Home() {
         {/* Second box  */}
 
         <div className="mt-8 mb-16 w-full space-y-16 ">
-          <h2 className="text-white text-3xl  md:text-4xl  lg:text-5xl font-bold text-center ">
+          <h2 className="text-white text-3xl  md:text-4xl  px-8 lg:text-5xl font-bold text-left lg:text-center ">
             What is Fluur?
           </h2>
 
-          <div className="mt-6 flex flex-col justify-center items-center px-8">
-            <p className="text-white max-w-5xl text-lg  md:text-xl  lg:text-2xl font-normal text-center lg:text-center ">
+          <div className="mt-6 flex flex-col justify-center items-center px-8 space-y-4 lg:space-y-8">
+            <p className="text-white max-w-5xl text-lg  md:text-xl  lg:text-2xl font-normal text-left lg:text-center ">
               Fluur is a web3 tech startup that focuses on building top notch
               infrastructures for other web 3 projects and tech startups. We are
               a development and marketing firm that offers end to end solutions
-              projects, startups and organizations. We offer unique white label
-              services and solutions tailored to meet our clients projects and
-              business needs. We have a dedicated team of Developers ,
-              Designers, Project managers, content writers, social media
-              managers, researchers, etc to help manage, develop and build in
-              demand solutions for our clients.
+              projects, startups and organizations.
+            </p>
+            <p className="text-white max-w-5xl text-lg  md:text-xl  lg:text-2xl font-normal text-left lg:text-center ">
+              We offer unique white label services and solutions tailored to
+              meet our clients projects and business needs.
+            </p>
+
+            <p className="text-white max-w-5xl text-lg  md:text-xl  lg:text-2xl font-normal text-left lg:text-center ">
+              We have a dedicated team of Developers , Designers, Project
+              managers, content writers, social media managers, researchers, etc
+              to help manage, develop and build in demand solutions for our
+              clients.
             </p>
           </div>
 
-          <h2 className="text-white text-3xl  md:text-4xl  lg:text-5xl font-bold text-center ">
+          <h2 className="text-white text-3xl  md:text-4xl px-8 lg:text-5xl font-bold text-left lg:text-center ">
             Our Services
           </h2>
 

@@ -57,7 +57,7 @@ function Footer(props) {
         <p className="text-white text-center lg:text-left lowercase text-xl lg:py-4 ">
           <i className="bi-envelope text-3xl  align-middle"></i>{" "}
           <a href="mailto:hello@fluur.io" className="hover:c-text">
-            Hello@Fluur.io
+            hello@fluur.co
           </a>
         </p>
 
