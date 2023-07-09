@@ -80,12 +80,12 @@ export default function Home() {
         {/* Second box  */}
 
         <div className="mt-8 mb-16 w-full space-y-16 ">
-          <h2 className="text-white text-3xl  md:text-4xl  lg:text-6xl font-bold text-center ">
+          <h2 className="text-white text-3xl  md:text-4xl  lg:text-5xl font-bold text-center ">
             What is Fluur?
           </h2>
 
           <div className="mt-6 flex flex-col justify-center items-center px-8">
-            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-bold text-left lg:text-center ">
+            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-normal text-center lg:text-center ">
               Fluur is a web3 tech startup that focuses on building top notch
               infrastructures for other web 3 projects and tech startups. We are
               a development and marketing firm that offers end to end solutions
@@ -98,12 +98,12 @@ export default function Home() {
             </p>
           </div>
 
-          <h2 className="text-white text-3xl  md:text-4xl  lg:text-6xl font-bold text-center ">
+          <h2 className="text-white text-3xl  md:text-4xl  lg:text-5xl font-bold text-center ">
             Our Services
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center justify-between items-center gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
+            <div className="flex flex-col  justify-center items-start lg:items-center">
               <div className="mb-8 ml-4">
                 <FaFileContract className="text-7xl 2xl:text-8xl c-text bi-rocket-takeoff"></FaFileContract>
               </div>
@@ -113,13 +113,14 @@ export default function Home() {
               </h1>
 
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   We write and deploy your smart contract to suit your business
                   goals and objectives.
                 </p>
               </Fade>
             </div>
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <RiNftFill className="text-7xl 2xl:text-8xl c-text bi-sign-intersection-y"></RiNftFill>
               </div>
@@ -127,88 +128,87 @@ export default function Home() {
                 {" "}
                 NFT Development
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   We will develop your NFT marketplace and Launchpad making it
                   easy for you to do business and seamlessly make money.
                 </p>
               </Fade>
             </div>
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <MdGeneratingTokens className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdGeneratingTokens>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Token and NFT Developement
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   We will develop your tokens and NFTs for your project and make
                   it easy for you to raise funds from investors.
                 </p>
               </Fade>
             </div>
 
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <FaRegMoneyBillAlt className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaRegMoneyBillAlt>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Defi Infrastrcutures
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   We build safe, secure and scalable Defi infrastructure on
                   multiple blockchains in the web3 space
                 </p>
               </Fade>
             </div>
 
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <RiStockLine className="text-7xl 2xl:text-8xl c-text bi-building-up"></RiStockLine>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 ICO/IEO Development
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   Work with our team of experts to build and launch your Token
                   sale successfully.
                 </p>
               </Fade>
             </div>
 
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <MdOutlineRealEstateAgent className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdOutlineRealEstateAgent>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Real Estate Tokenization
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   We will work with you comprehensively to easily mint and sell
                   your Real Estate assets globally as onchain assets.
                 </p>
               </Fade>
             </div>
 
-            <div>
+            <div className="flex flex-col  justify-center items-start lg:items-center">
+              {" "}
               <div className="mb-8 ml-4">
                 <FaProjectDiagram className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaProjectDiagram>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Project Management
               </h1>
-
               <Fade bottom exit>
-                <p className="py-2 text-base">
+                <p className="py-2 text-base text-left lg:text-center">
                   With our team of experts we can manage your project from
                   ideation to development and Launch.
                 </p>
