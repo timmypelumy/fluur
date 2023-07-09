@@ -145,7 +145,7 @@ export default function Home() {
                 <MdGeneratingTokens className="text-7xl 2xl:text-8xl c-text "></MdGeneratingTokens>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
-                Token and NFT Developement
+                Token and NFT Development
               </h1>
               <Fade bottom exit>
                 <p className="py-2 text-base text-left lg:text-center">
