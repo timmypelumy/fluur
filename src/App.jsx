@@ -85,7 +85,7 @@ export default function Home() {
           </h2>
 
           <div className="mt-6 flex flex-col justify-center items-center px-8">
-            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-normal text-center lg:text-center ">
+            <p className="text-white max-w-5xl text-lg  md:text-xl  lg:text-2xl font-normal text-center lg:text-center ">
               Fluur is a web3 tech startup that focuses on building top notch
               infrastructures for other web 3 projects and tech startups. We are
               a development and marketing firm that offers end to end solutions
@@ -102,7 +102,7 @@ export default function Home() {
             Our Services
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center justify-between items-center gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
+          <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center justify-between items-center gap-y-16 lg:gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
             <div className="flex flex-col  justify-center items-start lg:items-center">
               <div className="mb-8 ml-4">
                 <FaFileContract className="text-7xl 2xl:text-8xl c-text bi-rocket-takeoff"></FaFileContract>
