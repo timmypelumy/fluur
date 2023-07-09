@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r  from-[#22c1c3]  to-[#5d1de9]  bg-clip-text text-transparent;
+  }
+}
+
 @layer components {
   .c-bg {
     background: rgb(34, 193, 195);

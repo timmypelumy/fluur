@@ -21,11 +21,11 @@ export default function Home() {
     setChoice(n);
   }
 
-  function handleLaunchpadClick(e) {
+  function handleLaunchpadClick() {
     setShow(true);
   }
 
-  function handleCloseClick(e) {
+  function handleCloseClick() {
     setShow(false);
   }
 
@@ -105,7 +105,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2  justify-items-center justify-between items-center gap-y-16 lg:gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
             <div className="flex flex-col  justify-center items-start lg:items-center">
               <div className="mb-8 ml-4">
-                <FaFileContract className="text-7xl 2xl:text-8xl c-text bi-rocket-takeoff"></FaFileContract>
+                <FaFileContract className="text-7xl 2xl:text-8xl c-text " />
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 {" "}
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <RiNftFill className="text-7xl 2xl:text-8xl c-text bi-sign-intersection-y"></RiNftFill>
+                <RiNftFill className="text-7xl 2xl:text-8xl c-text "></RiNftFill>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 {" "}
@@ -138,7 +138,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <MdGeneratingTokens className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdGeneratingTokens>
+                <MdGeneratingTokens className="text-7xl 2xl:text-8xl c-text "></MdGeneratingTokens>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Token and NFT Developement
@@ -154,7 +154,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <FaRegMoneyBillAlt className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaRegMoneyBillAlt>
+                <FaRegMoneyBillAlt className="text-7xl 2xl:text-8xl c-text "></FaRegMoneyBillAlt>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Defi Infrastrcutures
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <RiStockLine className="text-7xl 2xl:text-8xl c-text bi-building-up"></RiStockLine>
+                <RiStockLine className="text-7xl 2xl:text-8xl c-text "></RiStockLine>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 ICO/IEO Development
@@ -186,7 +186,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <MdOutlineRealEstateAgent className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdOutlineRealEstateAgent>
+                <MdOutlineRealEstateAgent className="text-7xl 2xl:text-8xl c-text "></MdOutlineRealEstateAgent>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Real Estate Tokenization
@@ -202,7 +202,7 @@ export default function Home() {
             <div className="flex flex-col  justify-center items-start lg:items-center">
               {" "}
               <div className="mb-8 ml-4">
-                <FaProjectDiagram className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaProjectDiagram>
+                <FaProjectDiagram className="text-7xl 2xl:text-8xl c-text "></FaProjectDiagram>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 Project Management
