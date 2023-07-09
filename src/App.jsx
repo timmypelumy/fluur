@@ -37,6 +37,8 @@ export default function Home() {
       >
         <Header />
 
+        <div className="pt-24 lg:pt-36"></div>
+
         <NotificationCard
           successText="Notify Me"
           sMsg="We will release our contact info soon!"
@@ -45,7 +47,7 @@ export default function Home() {
           show={showComingSoon}
         />
 
-        <div className="min-h-screen pb-16 flex flex-col justify-center items-center lg:max-w-5xl  mx-auto w-full bg-black ">
+        <div className=" pb-16 flex flex-col justify-center items-center lg:max-w-5xl  mx-auto w-full bg-black ">
           <h1 className="text-3xl  leading-10 lg:text-5xl xl:text-6xl 2xl:text-7xl p py-12 px-8 lg:px-16 font-bold text-center text-white">
             {" "}
             Building Infrastructure for <WordScripter />
@@ -332,16 +334,18 @@ function WordScripter() {
     <Typewriter
       onInit={(typewriter) => {
         typewriter
-          .typeString("Web3 Adoption")
+          .typeString("<span class = 'text-white'> Web3 Adoption</span>")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("Startups")
+          .typeString("<span class = 'text-[#22c1c3]'> Startups</span>")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("Web3 Onboarding")
+          .typeString("<span class = 'text-[#5d1de9]'> Web3 Onboarding</span>")
           .pauseFor(2000)
           .deleteAll()
-          .typeString("Project Marketing")
+          .typeString(
+            "<span class = 'text-[#68c3c1] '> Project Marketing</span>"
+          )
           .pauseFor(2000)
           .deleteAll()
           .start();
@@ -349,6 +353,7 @@ function WordScripter() {
       options={{
         autoStart: true,
         loop: true,
+        deleteSpeed: 20,
       }}
     />
   );
