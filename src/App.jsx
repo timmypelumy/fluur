@@ -4,6 +4,7 @@ import NotificationCard from "./components/NotificationCard";
 import { Fade } from "react-reveal";
 import { useState } from "react";
 import cn from "classnames";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   const [showComingSoon, setShow] = useState(false);
@@ -40,7 +41,7 @@ export default function Home() {
         <div className="min-h-screen pb-16 flex flex-col justify-center items-center lg:max-w-5xl  mx-auto w-full bg-black ">
           <h1 className="text-3xl  leading-10 lg:text-5xl xl:text-6xl 2xl:text-7xl p py-12 px-8 lg:px-16 font-bold text-center text-white">
             {" "}
-            Building Infrastructure for Web3 Adoption
+            Building Infrastructure for <WordScripter />
           </h1>
 
           <h2 className="c-text  text-lg w-[90%] mx-auto text-center md:text-2xl lg:text-3xl">
@@ -75,6 +76,20 @@ export default function Home() {
           <h2 className="text-white text-3xl  md:text-4xl  lg:text-6xl font-bold text-center ">
             What is Fluur?
           </h2>
+
+          <div className="mt-6 flex flex-col justify-center items-center">
+            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-bold text-center ">
+              Fluur is a web3 tech startup that focuses on building top notch
+              infrastructures for other web 3 projects and tech startups. We are
+              a development and marketing firm that offers end to end solutions
+              projects, startups and organizations. We offer unique white label
+              services and solutions tailored to meet our clients projects and
+              business needs. We have a dedicated team of Developers ,
+              Designers, Project managers, content writers, social media
+              managers, researchers, etc to help manage, develop and build in
+              demand solutions for our clients.
+            </p>
+          </div>
 
           <div className="flex flex-col justify-center space-y-16 lg:space-y-0 lg:flex-row lg:justify-around items-center py-8 lg:w-[85%] mx-auto text-white/70 lg:space-x-20 mt-16 px-8 lg:px-0">
             <div>
@@ -258,5 +273,32 @@ export default function Home() {
         <Footer />
       </main>
     </div>
+  );
+}
+
+function WordScripter() {
+  return (
+    <Typewriter
+      onInit={(typewriter) => {
+        typewriter
+          .typeString("Web3 Adoption")
+          .pauseFor(2000)
+          .deleteAll()
+          .typeString("Startups")
+          .pauseFor(2000)
+          .deleteAll()
+          .typeString("Web3 Onboarding")
+          .pauseFor(2000)
+          .deleteAll()
+          .typeString("Project Marketing")
+          .pauseFor(2000)
+          .deleteAll()
+          .start();
+      }}
+      options={{
+        autoStart: true,
+        loop: true,
+      }}
+    />
   );
 }
