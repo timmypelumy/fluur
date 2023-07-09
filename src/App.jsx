@@ -5,6 +5,13 @@ import { Fade } from "react-reveal";
 import { useState } from "react";
 import cn from "classnames";
 import Typewriter from "typewriter-effect";
+import {
+  FaFileContract,
+  FaRegMoneyBillAlt,
+  FaProjectDiagram,
+} from "react-icons/fa";
+import { RiNftFill, RiStockLine } from "react-icons/ri";
+import { MdGeneratingTokens, MdOutlineRealEstateAgent } from "react-icons/md";
 
 export default function Home() {
   const [showComingSoon, setShow] = useState(false);
@@ -72,13 +79,13 @@ export default function Home() {
 
         {/* Second box  */}
 
-        <div className="mt-8 w-full ">
+        <div className="mt-8 mb-16 w-full space-y-16 ">
           <h2 className="text-white text-3xl  md:text-4xl  lg:text-6xl font-bold text-center ">
             What is Fluur?
           </h2>
 
-          <div className="mt-6 flex flex-col justify-center items-center">
-            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-bold text-center ">
+          <div className="mt-6 flex flex-col justify-center items-center px-8">
+            <p className="text-white max-w-5xl text-xl  md:text-xl  lg:text-2xl font-bold text-left lg:text-center ">
               Fluur is a web3 tech startup that focuses on building top notch
               infrastructures for other web 3 projects and tech startups. We are
               a development and marketing firm that offers end to end solutions
@@ -91,77 +98,119 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center space-y-16 lg:space-y-0 lg:flex-row lg:justify-around items-center py-8 lg:w-[85%] mx-auto text-white/70 lg:space-x-20 mt-16 px-8 lg:px-0">
+          <h2 className="text-white text-3xl  md:text-4xl  lg:text-6xl font-bold text-center ">
+            Our Services
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-stretch gap-y-32 gap-x-10 py-8   text-white/70  mt-16 px-8 ">
             <div>
               <div className="mb-8 ml-4">
-                <i className="text-7xl 2xl:text-8xl c-text bi-rocket-takeoff"></i>
-                {/* <img
-                  src="/assets/icons/rocket_launch_FILL0_wght100_GRAD0_opsz48.svg"
-                  alt="launchpad"
-                  width="100"
-                  height="100"
-                /> */}
+                <FaFileContract className="text-7xl 2xl:text-8xl c-text bi-rocket-takeoff"></FaFileContract>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 {" "}
-                NFT Launchpad
+                Smart Contract Development
               </h1>
 
               <Fade bottom exit>
                 <p className="py-2 text-base">
-                  A Launchpad, built specifically to onboard quality projects
-                  into web3, eliminate rugs and bad actors, permissionless for
-                  creators & projects to launch and open for the community to
-                  safely Invest in these projects at their early stages.
+                  We write and deploy your smart contract to suit your business
+                  goals and objectives.
                 </p>
               </Fade>
             </div>
             <div>
               <div className="mb-8 ml-4">
-                <i className="text-7xl 2xl:text-8xl c-text bi-sign-intersection-y"></i>
-
-                {/* <img
-                  src="/assets/icons/handshake_FILL0_wght100_GRAD0_opsz48.svg"
-                  alt="launchpad"
-                  width="100"
-                  height="100"
-                /> */}
+                <RiNftFill className="text-7xl 2xl:text-8xl c-text bi-sign-intersection-y"></RiNftFill>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
                 {" "}
-                Marketing & Partnership
+                NFT Development
               </h1>
 
               <Fade bottom exit>
                 <p className="py-2 text-base">
-                  We will partner with global brands and leaders, to make
-                  available the most promising NFT collections, ranging from
-                  white-glove partnerships to totally new ideas, We want to hear
-                  your bright ideas.
+                  We will develop your NFT marketplace and Launchpad making it
+                  easy for you to do business and seamlessly make money.
                 </p>
               </Fade>
             </div>
             <div>
               <div className="mb-8 ml-4">
-                <i className="text-7xl 2xl:text-8xl c-text bi-building-up"></i>
-
-                {/* <img
-                  src="/assets/icons/component_exchange_FILL1_wght100_GRAD0_opsz48.svg"
-                  alt="launchpad"
-                  width="100"
-                  height="100"
-                /> */}
+                <MdGeneratingTokens className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdGeneratingTokens>
               </div>
               <h1 className="font-bold capitalize text-white text-2xl mb-6">
-                Project Incubation{" "}
+                Token and NFT Developement
               </h1>
 
               <Fade bottom exit>
                 <p className="py-2 text-base">
-                  We will partner with Promising projects with good technology
-                  and utility, onboard them, Invest and also give them access to
-                  potential investors and project Advisors making it easier to
-                  fulfill their objectives.
+                  We will develop your tokens and NFTs for your project and make
+                  it easy for you to raise funds from investors.
+                </p>
+              </Fade>
+            </div>
+
+            <div>
+              <div className="mb-8 ml-4">
+                <FaRegMoneyBillAlt className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaRegMoneyBillAlt>
+              </div>
+              <h1 className="font-bold capitalize text-white text-2xl mb-6">
+                Defi Infrastrcutures
+              </h1>
+
+              <Fade bottom exit>
+                <p className="py-2 text-base">
+                  We build safe, secure and scalable Defi infrastructure on
+                  multiple blockchains in the web3 space
+                </p>
+              </Fade>
+            </div>
+
+            <div>
+              <div className="mb-8 ml-4">
+                <RiStockLine className="text-7xl 2xl:text-8xl c-text bi-building-up"></RiStockLine>
+              </div>
+              <h1 className="font-bold capitalize text-white text-2xl mb-6">
+                ICO/IEO Development
+              </h1>
+
+              <Fade bottom exit>
+                <p className="py-2 text-base">
+                  Work with our team of experts to build and launch your Token
+                  sale successfully.
+                </p>
+              </Fade>
+            </div>
+
+            <div>
+              <div className="mb-8 ml-4">
+                <MdOutlineRealEstateAgent className="text-7xl 2xl:text-8xl c-text bi-building-up"></MdOutlineRealEstateAgent>
+              </div>
+              <h1 className="font-bold capitalize text-white text-2xl mb-6">
+                Real Estate Tokenization
+              </h1>
+
+              <Fade bottom exit>
+                <p className="py-2 text-base">
+                  We will work with you comprehensively to easily mint and sell
+                  your Real Estate assets globally as onchain assets.
+                </p>
+              </Fade>
+            </div>
+
+            <div>
+              <div className="mb-8 ml-4">
+                <FaProjectDiagram className="text-7xl 2xl:text-8xl c-text bi-building-up"></FaProjectDiagram>
+              </div>
+              <h1 className="font-bold capitalize text-white text-2xl mb-6">
+                Project Management
+              </h1>
+
+              <Fade bottom exit>
+                <p className="py-2 text-base">
+                  With our team of experts we can manage your project from
+                  ideation to development and Launch.
                 </p>
               </Fade>
             </div>
@@ -170,7 +219,7 @@ export default function Home() {
 
         {/* Third Box  */}
 
-        <div className="mt-16  flex-col lg:flex-row justify-center lg:justify-between lg:w-[85%] mx-auto pt-12 flex px-8 lg:px-0">
+        <div className="hidden mt-16  flex-col lg:flex-row justify-center lg:justify-between lg:w-[85%] mx-auto pt-12  px-8 lg:px-0">
           <div className="lg:w-[50%]">
             <h2 className="text-white text-3xl  md:text-4xl  xl:text-5xl font-bold text-center lg:text-left ">
               Fluur:Defuture
